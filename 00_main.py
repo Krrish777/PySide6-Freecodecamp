@@ -1,10 +1,10 @@
 import sys
 from PySide6 import QtWidgets
-from qtdesigner import UserInterface
+from imp import Widget
 
 app = QtWidgets.QApplication(sys.argv)
 
-window = UserInterface()
-window.show()
+widget = Widget()
+widget.show()
 
 app.exec()

@@ -1,10 +1,11 @@
+#pyside6-uic form.ui > ui_form.py
 import sys
 from PySide6 import QtWidgets
-from qtdesigner import UserInterface
+from widget import Widget
 
 app = QtWidgets.QApplication(sys.argv)
 
-window = UserInterface()
-window.show()
+widget = Widget()
+widget.show()
 
 app.exec()
